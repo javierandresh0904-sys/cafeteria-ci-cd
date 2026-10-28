@@ -1,6 +1,12 @@
-
+const test = require('node:test');
+const assert = require('node:assert/strict');
 const { calcularTotal } = require('./pedido');
 
-test('calcula el total de un pedido', () => {
-  expect(calcularTotal(12000, 2)).toBe(24000);
+test('Dos almuerzos', () => {
+  assert.equal(calcularTotal(12000, 2), 24000);
 });
+
+test('Tres jugos', () => {
+  assert.equal(calcularTotal(4000, 3), 12000);
+});
+
