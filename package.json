@@ -1,0 +1,9 @@
+{
+  "name": "cafeteria-ci-cd",
+  "version": "1.0.0",
+  "description": "Pruebas automaticas del sistema de pedidos de cafeteria",
+  "main": "pedido.js",
+  "scripts": {
+    "test": "node --test pedido.test.js"
+  }
+}
